@@ -10,8 +10,9 @@ function confirmar() {
 
     if ( i.value.length == 0 || f.value.length == 0 || p.value.length == 0 ) {
         alert('Digite corretamente!')
-    }
-    else {
+    } else if (pulando == 0) {
+        alert('[ERRO] utilizando o valor 1 para realizar o calculo.')
+    } else {
         if (inicio <= fim) {
             msg.innerHTML = ('Contando: ')
             while (inicio <= fim) {
